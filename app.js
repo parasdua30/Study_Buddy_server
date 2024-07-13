@@ -2,6 +2,7 @@ import express from "express";
 import { Server } from "socket.io";
 import { createServer } from "http";
 import cors from "cors";
+import dotenv from "dotenv";
 import { corsOptions } from "./constants/config.js";
 dotenv.config({
     path: "./.env",
