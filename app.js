@@ -7,7 +7,7 @@ dotenv.config({
     path: "./.env",
 });
 
-const PORT = 8000 || process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 const app = express();
 const server = createServer(app);
