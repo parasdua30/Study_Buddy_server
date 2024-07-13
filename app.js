@@ -19,6 +19,10 @@ const io = new Server(server, { cors: corsOptions });
 
 app.set("io", io);
 
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
 // <---------- SOCKET ---------->
 const userToSocketIdMap = new Map();
 const socketidToUserMap = new Map();
