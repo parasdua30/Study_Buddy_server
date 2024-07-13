@@ -3,6 +3,9 @@ import { Server } from "socket.io";
 import { createServer } from "http";
 import cors from "cors";
 import { corsOptions } from "./constants/config.js";
+dotenv.config({
+    path: "./.env",
+});
 
 const PORT = 8000 || process.env.PORT;
 
